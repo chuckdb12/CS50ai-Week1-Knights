@@ -15,7 +15,7 @@ class Sentence():
         """Returns a set of all symbols in the logical sentence."""
         return set()
 
-    @classmethod
+    @classmethod #This is a decorator
     def validate(cls, sentence):
         if not isinstance(sentence, Sentence):
             raise TypeError("must be a logical sentence")
